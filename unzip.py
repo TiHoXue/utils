@@ -4,7 +4,7 @@
 import os
 import zipfile
 
-def unzip_files(root_dir, recursive=False):
+def unzip_files(root_dir: str, recursive: bool = False):
     for root, dirs, files in os.walk(root_dir):
         for file in files:
             if file.endswith('.zip'):
